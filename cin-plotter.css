@@ -1,24 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rye&display=swap');
+
 .cin-plotter {
     --accent: var(--acc, #777);
+
     width: 620px;
     max-width: 94%;
     margin: 30px auto;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+
     background:
-        linear-gradient(rgba(8,8,8,.58), rgba(8,8,8,.66)),
+        linear-gradient(rgba(7,7,7,.46), rgba(7,7,7,.54)),
         url("https://i.imgur.com/YdjlC3W.png");
-    background-repeat: repeat, repeat;
+
+    background-repeat: repeat;
     background-size: auto, 350px auto;
     background-position: center, center top;
+
     border: 1px solid var(--accent);
+
     box-shadow:
-        0 18px 45px rgba(0,0,0,.60),
-        inset 0 0 0 4px #090909,
-        inset 0 0 0 5px rgba(255,255,255,.035),
-        inset 0 0 45px rgba(0,0,0,.72);
-    color: #d2ccc4;
+        0 18px 45px rgba(0,0,0,.65),
+        inset 0 0 0 5px #070707,
+        inset 0 0 0 6px rgba(255,255,255,.05),
+        inset 0 0 40px rgba(0,0,0,.7);
+
+    color: #d4cdc4;
     font-family: Arial, sans-serif;
 }
 
@@ -62,35 +70,63 @@
 .cin-plotter::before {
     content: "";
     position: absolute;
-    inset: 7px;
-    z-index: 20;
+    inset: 9px;
     pointer-events: none;
-    border: 1px solid rgba(255,255,255,.035);
+    z-index: 50;
+
+    border: 1px dashed rgba(190,180,165,.14);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(0,0,0,.7);
+}
+
+.cin-plotter::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    pointer-events: none;
+    z-index: 51;
+
     background:
-        radial-gradient(circle at 5px 5px, #8b8175 0 1px, #37322d 2px, #121110 3px, transparent 4px),
-        radial-gradient(circle at calc(100% - 5px) 5px, #8b8175 0 1px, #37322d 2px, #121110 3px, transparent 4px),
-        radial-gradient(circle at 5px calc(100% - 5px), #8b8175 0 1px, #37322d 2px, #121110 3px, transparent 4px),
-        radial-gradient(circle at calc(100% - 5px) calc(100% - 5px), #8b8175 0 1px, #37322d 2px, #121110 3px, transparent 4px);
-    opacity: .85;
+        radial-gradient(circle at 6px 6px,
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px),
+        radial-gradient(circle at calc(100% - 6px) 6px,
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px),
+        radial-gradient(circle at 6px calc(100% - 6px),
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px),
+        radial-gradient(circle at calc(100% - 6px) calc(100% - 6px),
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px);
 }
 
 .cin-plotter-header {
     display: flex;
-    min-height: 280px;
+    min-height: 285px;
     position: relative;
-    background: linear-gradient(115deg, rgba(255,255,255,.02), rgba(0,0,0,.16) 40%, rgba(0,0,0,.42));
-    border-bottom: 1px solid var(--accent);
-    box-shadow: inset 0 -7px 18px rgba(0,0,0,.65);
-}
 
-.cin-plotter-header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 4px;
-    height: 1px;
-    background: rgba(255,255,255,.055);
+    background:
+        linear-gradient(
+            110deg,
+            rgba(0,0,0,.05),
+            rgba(0,0,0,.16) 38%,
+            rgba(0,0,0,.48)
+        );
+
+    border-bottom: 3px double var(--accent);
+
+    box-shadow:
+        inset 0 -15px 25px rgba(0,0,0,.5);
 }
 
 .cin-plotter-portrait {
@@ -98,169 +134,286 @@
     min-width: 180px;
     position: relative;
     overflow: hidden;
-    border-right: 1px solid var(--accent);
-    box-shadow: 5px 0 18px rgba(0,0,0,.55);
+
+    border-right: 3px double var(--accent);
+
+    box-shadow:
+        6px 0 20px rgba(0,0,0,.5);
 }
 
 .cin-plotter-portrait::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, transparent 55%, rgba(0,0,0,.48));
-    box-shadow: inset 0 0 28px rgba(0,0,0,.48);
-    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 58%,
+            rgba(0,0,0,.45)
+        );
+
+    box-shadow:
+        inset 0 0 25px rgba(0,0,0,.55);
 }
 
 .cin-plotter-portrait img {
     width: 100%;
     height: 100%;
-    min-height: 280px;
+    min-height: 285px;
     object-fit: cover;
     display: block;
 }
 
 .cin-plotter-intro {
     flex: 1;
-    position: relative;
+    padding: 28px 28px 24px;
     box-sizing: border-box;
-    padding: 30px 26px 25px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.cin-plotter-intro::before {
-    content: "";
-    width: 34px;
-    height: 3px;
-    position: absolute;
-    top: 23px;
-    left: 26px;
-    background: var(--accent);
-    box-shadow: 41px 0 0 -1px rgba(255,255,255,.10);
-}
-
 .cin-plotter-name {
-    margin: 12px 0 15px;
-    color: var(--accent);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 29px;
-    font-weight: bold;
-    line-height: .95;
+    display: inline-block;
+    align-self: flex-start;
+
+    margin: 0 0 16px;
+    padding: 9px 14px 8px;
+
+    color: #ddd3c5;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(70,65,59,.45),
+            rgba(15,14,13,.85)
+        );
+
+    border: 1px solid var(--accent);
+    border-left: 5px solid var(--accent);
+
+    box-shadow:
+        inset 0 0 12px rgba(0,0,0,.55),
+        0 4px 9px rgba(0,0,0,.25);
+
+    font-family: "Rye", Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.05;
+
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 0 #000, 0 2px 4px rgba(0,0,0,.75);
+
+    text-shadow:
+        1px 1px 0 #000,
+        0 2px 4px rgba(0,0,0,.9);
 }
 
 .cin-plotter-name a {
-    color: var(--accent) !important;
+    color: #ddd3c5 !important;
     text-decoration: none !important;
 }
 
-.cin-plotter-info { margin-bottom: 16px; }
-.cin-meta-row { display: flex; flex-wrap: wrap; gap: 5px 8px; margin-bottom: 5px; }
+.cin-plotter-info {
+    margin-bottom: 16px;
+}
+
+.cin-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 6px;
+}
 
 .cin-meta {
-    color: #aaa39b;
+    padding: 3px 8px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.055),
+            rgba(0,0,0,.22)
+        );
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-bottom-color: var(--accent);
+
+    color: #aaa298;
+
+    font-family: "Oswald", Arial, sans-serif;
     font-size: 9px;
-    font-weight: bold;
+    font-weight: 600;
+
     text-transform: uppercase;
-    letter-spacing: 1.65px;
+    letter-spacing: 1.4px;
 }
 
 .cin-meta::after {
-    content: "◆";
-    color: var(--accent);
-    margin-left: 8px;
-    font-size: 5px;
-    vertical-align: 2px;
+    display: none;
 }
-
-.cin-meta:last-child::after { display: none; }
 
 .cin-plotter-quote {
     position: relative;
-    margin-top: 5px;
-    padding: 15px 4px 0 19px;
-    border-top: 1px solid rgba(255,255,255,.08);
-    color: #c3bcb2;
-    font-family: Georgia, "Times New Roman", serif;
+
+    margin-top: 3px;
+    padding: 16px 16px 15px 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.12)
+        );
+
+    border-top: 1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.04);
+    border-left: 3px solid var(--accent);
+
+    color: #c5bdb3;
+
+    font-family: Georgia, serif;
     font-size: 13px;
     font-style: italic;
     line-height: 1.55;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.8);
 }
 
 .cin-plotter-quote::before {
     content: "“";
     position: absolute;
-    left: 0;
-    top: 8px;
+    left: 10px;
+    top: 7px;
+
     color: var(--accent);
+
     font-family: Georgia, serif;
-    font-size: 31px;
+    font-size: 35px;
     font-weight: bold;
-    line-height: 1;
 }
 
-.cin-plotter-body { padding: 28px 22px 26px; }
+.cin-plotter-body {
+    padding: 27px 22px 28px;
+}
 
 .cin-plot-section {
     position: relative;
-    margin-bottom: 30px;
-    padding: 15px 16px 16px 18px;
-    background: linear-gradient(90deg, rgba(0,0,0,.34), rgba(0,0,0,.14) 65%, rgba(0,0,0,.06));
-    border-left: 2px solid var(--accent);
-    border-top: 1px solid rgba(255,255,255,.025);
-    border-bottom: 1px solid rgba(0,0,0,.45);
-    box-shadow: inset 4px 0 12px rgba(0,0,0,.35);
+
+    margin-bottom: 28px;
+    padding: 22px 18px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(10,10,10,.62),
+            rgba(20,18,16,.38)
+        );
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    box-shadow:
+        inset 0 0 20px rgba(0,0,0,.35),
+        0 4px 12px rgba(0,0,0,.18);
 }
 
-.cin-plot-section:last-child { margin-bottom: 0; }
+.cin-plot-section::before,
+.cin-plot-section::after {
+    content: "";
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #a0988d 0 18%,
+            #4b4640 35%,
+            #171513 70%
+        );
+
+    top: 6px;
+}
+
+.cin-plot-section::before {
+    left: 7px;
+}
+
+.cin-plot-section::after {
+    right: 7px;
+}
+
+.cin-plot-section:last-child {
+    margin-bottom: 0;
+}
 
 .cin-plot-title {
+    display: inline-block;
+
     position: relative;
-    margin: 0 0 13px;
-    padding: 0 0 10px;
-    color: var(--accent);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    font-weight: bold;
+    top: -10px;
+    left: -3px;
+
+    margin: 0 0 5px;
+    padding: 7px 15px 7px 18px;
+
+    color: #d7cec2;
+
+    background:
+        linear-gradient(
+            180deg,
+            color-mix(in srgb, var(--accent) 36%, #171514),
+            #141210
+        );
+
+    border: 1px solid var(--accent);
+    border-left: 5px solid var(--accent);
+
+    box-shadow:
+        inset 0 0 9px rgba(0,0,0,.55),
+        3px 4px 7px rgba(0,0,0,.22);
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
     text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 1px solid rgba(255,255,255,.075);
-    text-shadow: 1px 1px 0 #000, 0 2px 3px rgba(0,0,0,.7);
+    letter-spacing: 2.2px;
+
+    text-shadow:
+        1px 1px 1px #000;
 }
 
 .cin-plot-title::before {
     content: "◆";
     margin-right: 8px;
+
     color: var(--accent);
+
     font-size: 7px;
     vertical-align: 2px;
 }
 
 .cin-plot-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 45px;
-    height: 1px;
-    background: var(--accent);
+    display: none;
 }
 
 .cin-plot-copy {
-    color: #ccc6bd;
+    padding: 4px 4px 2px;
+
+    color: #cec7be;
+
     font-size: 12px;
     line-height: 1.7;
+
     text-align: justify;
 }
 
 .cin-plot-copy b {
     color: var(--accent);
     font-weight: bold;
-    letter-spacing: .4px;
 }
 
 .cin-connections {
@@ -272,99 +425,157 @@
 .cin-connection {
     position: relative;
     box-sizing: border-box;
-    padding: 12px 13px 12px 16px;
-    background: linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.22));
-    border: 1px solid rgba(255,255,255,.075);
-    border-left: 3px solid var(--accent);
-    box-shadow: inset 0 0 18px rgba(0,0,0,.35), 0 4px 10px rgba(0,0,0,.16);
+
+    padding: 13px 15px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.025),
+            rgba(0,0,0,.22)
+        );
+
+    border: 1px solid rgba(255,255,255,.07);
+    border-left: 4px solid var(--accent);
+
+    box-shadow:
+        inset 0 0 15px rgba(0,0,0,.35);
+
     color: #bbb4ab;
+
     font-size: 11px;
     line-height: 1.55;
 }
 
-.cin-connection::after {
-    content: "•";
-    position: absolute;
-    top: 4px;
-    right: 7px;
+.cin-connection b {
+    display: inline-block;
+
+    margin-bottom: 7px;
+    padding: 3px 9px;
+
+    background: rgba(0,0,0,.38);
+
+    border: 1px solid rgba(255,255,255,.05);
+
     color: var(--accent);
-    font-size: 12px;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
 }
 
-.cin-connection b {
-    display: block;
-    margin-bottom: 5px;
+.cin-connection::after {
+    content: "◆";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+
     color: var(--accent);
-    font-size: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
+
+    font-size: 6px;
 }
 
 .cin-connection-list {
     max-height: 115px;
+
     overflow-y: auto;
     overflow-x: hidden;
+
     padding-right: 8px;
+
     scrollbar-width: thin;
     scrollbar-color: var(--accent) rgba(0,0,0,.25);
 }
 
-.cin-connection-list::-webkit-scrollbar { width: 5px; }
-.cin-connection-list::-webkit-scrollbar-track { background: rgba(0,0,0,.25); }
-.cin-connection-list::-webkit-scrollbar-thumb { background: var(--accent); }
-
-.cin-connection-person {
-    padding: 5px 0;
-    border-bottom: 1px solid rgba(255,255,255,.045);
+.cin-connection-list::-webkit-scrollbar {
+    width: 5px;
 }
 
-.cin-connection-person:last-child { border-bottom: 0; }
+.cin-connection-list::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.25);
+}
+
+.cin-connection-list::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+.cin-connection-person {
+    padding: 6px 0;
+
+    border-bottom: 1px dashed rgba(255,255,255,.06);
+}
+
+.cin-connection-person:last-child {
+    border-bottom: 0;
+}
 
 .cin-connection-person strong {
     color: var(--accent);
+
+    font-family: "Oswald", Arial, sans-serif;
     font-size: 10px;
-    letter-spacing: .5px;
+
+    letter-spacing: .6px;
 }
 
 .cin-plotter-footer {
-    position: relative;
     padding: 15px 20px;
-    border-top: 1px solid var(--accent);
-    background: linear-gradient(180deg, rgba(255,255,255,.018), rgba(0,0,0,.30));
-    box-shadow: inset 0 5px 15px rgba(0,0,0,.45);
-    color: #77716b;
+
+    border-top: 3px double var(--accent);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.025),
+            rgba(0,0,0,.35)
+        );
+
+    color: #817a72;
+
     text-align: center;
+
+    font-family: "Oswald", Arial, sans-serif;
     font-size: 8px;
+
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.8px;
 }
 
-.cin-plotter-footer::before {
-    content: "◆";
-    color: var(--accent);
-    margin-right: 10px;
-    font-size: 6px;
-}
-
+.cin-plotter-footer::before,
 .cin-plotter-footer::after {
-    content: "◆";
+    content: "★";
+
     color: var(--accent);
-    margin-left: 10px;
-    font-size: 6px;
+
+    margin: 0 12px;
+
+    font-size: 7px;
 }
 
 @media (max-width:650px) {
-    .cin-plotter-header { display: block; }
+
+    .cin-plotter-header {
+        display: block;
+    }
+
     .cin-plotter-portrait {
         width: 100%;
         height: 240px;
+
         border-right: 0;
-        border-bottom: 1px solid var(--accent);
+        border-bottom: 3px double var(--accent);
     }
+
     .cin-plotter-portrait img {
         height: 240px;
         min-height: 0;
     }
-    .cin-plotter-name { font-size: 25px; }
+
+    .cin-plotter-name {
+        font-size: 22px;
+    }
+
 }
