@@ -76,15 +76,34 @@
 
 .cin-master-header {
     position: relative;
-    overflow: hidden;
+    z-index: 1;
+
+    overflow: visible;
 
     padding: 34px 35px 30px;
 
     text-align: center;
 
-    border-bottom:
-        1px solid
+    border-bottom: 0;
+}
+
+.cin-master-header::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background:
         rgba(255,255,255,.06);
+
+    z-index: 3;
+
+    pointer-events: none;
 }
 
 .cin-master-header::after {
@@ -92,24 +111,28 @@
 
     position: absolute;
 
-    width: 250px;
-    height: 250px;
+    width: 315px;
+    height: 315px;
 
-    right: -20px;
-    top: -70px;
+    right: -5px;
+    top: -28px;
 
-    background:
-        url("https://i.imgur.com/NZ51lDa.png")
-        center / contain
-        no-repeat;
+    background-image:
+        url("https://i.imgur.com/NZ51lDa.png");
 
-    opacity: .08;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: .085;
 
     filter:
         grayscale(100%)
         contrast(115%);
 
     pointer-events: none;
+
+    z-index: 0;
 }
 
 .cin-master-title {
@@ -147,11 +170,19 @@
 }
 
 .cin-master-body {
+    position: relative;
+    z-index: 2;
+
     padding: 26px 16px 30px;
+
+    background: transparent;
 }
 
 .cin-master-group {
     --accent: #777;
+
+    position: relative;
+
     margin-bottom: 30px;
 }
 
@@ -199,6 +230,7 @@
 .cin-master-group-title {
     display: flex;
     align-items: center;
+
     gap: 10px;
 
     margin-bottom: 13px;
@@ -218,6 +250,7 @@
 
 .cin-master-group-title::before {
     content: "◆";
+
     font-size: 7px;
 }
 
@@ -408,8 +441,20 @@
         var(--accent);
 }
 
+.cin-master-plotter-link:hover {
+    color: #d8d0c6 !important;
+
+    border-bottom-color:
+        #d8d0c6;
+}
+
 .cin-master-footer {
-    padding: 14px 20px 18px;
+    position: relative;
+
+    padding:
+        14px
+        20px
+        18px;
 
     text-align: center;
 
@@ -439,8 +484,6 @@
         width: 100%;
         max-width: 100%;
     }
-
-}
 
 }
 
