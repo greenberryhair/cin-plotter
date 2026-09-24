@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rye&family=Sancreek&display=swap');
 
 .cin-master {
-    width: 860px;
-    max-width: 96%;
-    margin: 30px auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
@@ -147,7 +147,7 @@
 }
 
 .cin-master-body {
-    padding: 26px 22px 30px;
+    padding: 26px 16px 30px;
 }
 
 .cin-master-group {
@@ -436,8 +436,11 @@
 @media (max-width:900px) {
 
     .cin-master {
-        max-width: 96%;
+        width: 100%;
+        max-width: 100%;
     }
+
+}
 
 }
 
