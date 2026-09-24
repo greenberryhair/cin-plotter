@@ -1,0 +1,145 @@
+[dohtml]
+
+<style>
+@import url('YOUR_CSS_URL_HERE');
+</style>
+
+<div class="cin-plotter SAMROCK">
+
+    <div class="cin-plotter-header">
+
+        <div class="cin-plotter-portrait">
+            <img src="https://i.imgur.com/Ek7P8VJ.gif" alt="Kane Everett Peltier">
+        </div>
+
+        <div class="cin-plotter-intro">
+
+            <div class="cin-plotter-name">[/dohtml]@[Kane Everett Peltier][dohtml]</div>
+
+            <div class="cin-plotter-info">
+
+                <div class="cin-meta-row">
+                    <span class="cin-meta">58</span>
+                    <span class="cin-meta">SAMROCK</span>
+                    <span class="cin-meta">President</span>
+                </div>
+
+                <div class="cin-meta-row">
+                    <span class="cin-meta">Mechanic</span>
+                    <span class="cin-meta">Little Rock, AR</span>
+                    <span class="cin-meta">Played by Josh Brolin</span>
+                </div>
+
+            </div>
+
+            <div class="cin-plotter-quote">
+                Family is everything. You protect it, you fight for it,
+                and if you’re the one who breaks it, you spend the rest
+                of your life trying to make it right.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cin-plotter-body">
+
+        <div class="cin-plot-section">
+
+            <div class="cin-plot-title">About Kane</div>
+
+            <div class="cin-plot-copy">
+                Kane is the President of the Little Rock Sons of Anarchy
+                charter and owner of the family garage. Family comes before
+                damn near everything else in his life. He is protective,
+                stubborn, hard-headed, proud, and has a temper that has cost
+                him more than he cares to admit.
+
+                <br><br>
+
+                He spends most of his time between the <b>club</b>,
+                <b>garage</b>, and <b>family</b>, and usually considers
+                anyone he lets close enough to matter as one of his own.
+            </div>
+
+        </div>
+
+        <div class="cin-plot-section">
+
+            <div class="cin-plot-title">Looking For</div>
+
+            <div class="cin-plot-copy">
+                Put whatever plots you want for Kane here.
+
+                <br><br>
+
+                This can be completely freeform. Family connections,
+                SAMROCK relationships, old friends, enemies, garage
+                customers, people from Kane's past, club business,
+                complicated relationships, or anything else that might
+                create an interesting thread.
+            </div>
+
+        </div>
+
+        <div class="cin-plot-section">
+
+            <div class="cin-plot-title">Connections</div>
+
+            <div class="cin-connections">
+
+                <div class="cin-connection">
+                    <b>Family</b>
+                    <div class="cin-connection-list">
+                        <div class="cin-connection-person">
+                            <strong>Character Name</strong> • Relationship or short description.
+                        </div>
+                        <div class="cin-connection-person">
+                            <strong>Character Name</strong> • Relationship or short description.
+                        </div>
+                        <div class="cin-connection-person">
+                            <strong>Character Name</strong> • Relationship or short description.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cin-connection">
+                    <b>Friends</b>
+                    <div class="cin-connection-list">
+                        <div class="cin-connection-person">
+                            <strong>Character Name</strong> • Relationship or short description.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cin-connection">
+                    <b>Club</b>
+                    <div class="cin-connection-list">
+                        <div class="cin-connection-person">
+                            <strong>Character Name</strong> • Relationship or short description.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cin-connection">
+                    <b>Other</b>
+                    <div class="cin-connection-list">
+                        <div class="cin-connection-person">
+                            <strong>Character Name</strong> • Relationship or short description.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cin-plotter-footer">
+        Cindie's Characters • Plot With Me
+    </div>
+
+</div>
+
+[/dohtml]
