@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rye&family=Sancreek&display=swap');
+
+.cin-master {
+    width: 700px;
+    max-width: 94%;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            rgba(7,7,7,.42),
+            rgba(7,7,7,.50)
+        ),
+        url("https://i.imgur.com/YdjlC3W.png");
+
+    background-repeat: repeat, repeat;
+    background-size: auto, 350px auto;
+    background-position: center, center top;
+
+    border: 1px solid #5b5650;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.65),
+        inset 0 0 0 5px #070707,
+        inset 0 0 0 6px rgba(255,255,255,.045),
+        inset 0 0 40px rgba(0,0,0,.68);
+
+    color: #d4cdc4;
+    font-family: Arial, sans-serif;
+}
+
+.cin-master::before {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    z-index: 50;
+    pointer-events: none;
+
+    border: 1px dashed rgba(200,190,175,.12);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(0,0,0,.7);
+}
+
+.cin-master::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    z-index: 51;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 6px 6px,
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px),
+        radial-gradient(circle at calc(100% - 6px) 6px,
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px),
+        radial-gradient(circle at 6px calc(100% - 6px),
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px),
+        radial-gradient(circle at calc(100% - 6px) calc(100% - 6px),
+            #aaa094 0 1px,
+            #514b44 2px,
+            #171513 3px,
+            transparent 4px);
+}
+
+.cin-master-header {
+    position: relative;
+    overflow: hidden;
+    padding: 34px 35px 30px;
+    text-align: center;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.06);
+}
+
+.cin-master-header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    right: -20px;
+    top: -70px;
+
+    background:
+        url("https://i.imgur.com/NZ51lDa.png")
+        center / contain
+        no-repeat;
+
+    opacity: .08;
+
+    filter:
+        grayscale(100%)
+        contrast(115%);
+
+    pointer-events: none;
+}
+
+.cin-master-title {
+    position: relative;
+    z-index: 2;
+
+    color: #d5cdc2;
+
+    font-family: "Rye", Georgia, serif;
+    font-size: 29px;
+
+    line-height: 1.1;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    text-shadow:
+        1px 1px 0 #000,
+        0 3px 7px rgba(0,0,0,.8);
+}
+
+.cin-master-subtitle {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 8px;
+
+    color: #817a72;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 9px;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.cin-master-body {
+    padding: 26px 22px 30px;
+}
+
+.cin-master-group {
+    --accent: #777;
+    margin-bottom: 30px;
+}
+
+.cin-master-group:last-child {
+    margin-bottom: 0;
+}
+
+.cin-master-group.SAMWASH   { --accent: #1F75FE; }
+.cin-master-group.Washjr    { --accent: #4F7899; }
+.cin-master-group.Ladies    { --accent: #9A3E68; }
+.cin-master-group.Family    { --accent: #306177; }
+.cin-master-group.Law       { --accent: #708090; }
+.cin-master-group.Mayans    { --accent: #009900; }
+.cin-master-group.Grove     { --accent: #336633; }
+.cin-master-group.GroveJr   { --accent: #336666; }
+.cin-master-group.Prospect  { --accent: #FF7F50; }
+.cin-master-group.JR        { --accent: #FFAD8A; }
+.cin-master-group.SAMCRO    { --accent: #592667; }
+.cin-master-group.SAMCROJr  { --accent: #43417B; }
+.cin-master-group.Cara      { --accent: #FF0080; }
+.cin-master-group.Sweetbutt { --accent: #A94FB3; }
+.cin-master-group.SAMRENO   { --accent: #5C8C7E; }
+.cin-master-group.SAMRENJr  { --accent: #008080; }
+.cin-master-group.SAMTONG   { --accent: #343EBC; }
+.cin-master-group.SAMTONGJr { --accent: #0033FF; }
+.cin-master-group.SAMBRO    { --accent: #704241; }
+.cin-master-group.SAMBROJr  { --accent: #996633; }
+.cin-master-group.SAMLA     { --accent: #D04000; }
+.cin-master-group.SAMLAJR   { --accent: #E67E22; }
+.cin-master-group.SAMBIG    { --accent: #DC143C; }
+.cin-master-group.SAMBIGJR  { --accent: #8B0000; }
+.cin-master-group.SAMBRON   { --accent: #FFFACD; }
+.cin-master-group.SAMBRONJR { --accent: #FFF000; }
+.cin-master-group.Apex      { --accent: #343A40; }
+.cin-master-group.SAMOAHU   { --accent: #D9D2C3; }
+.cin-master-group.Lucifers  { --accent: #FF3131; }
+.cin-master-group.SAMDEN    { --accent: #67A9CF; }
+.cin-master-group.SAMKAN    { --accent: #CFC000; }
+.cin-master-group.SAMKANJR  { --accent: #E0CF4F; }
+.cin-master-group.SAMTAZ    { --accent: #BE5550; }
+.cin-master-group.SAMROCK   { --accent: #7F3036; }
+.cin-master-group.SAMROCKJR { --accent: #A8646B; }
+.cin-master-group.SAMSTO    { --accent: #7F7D22; }
+
+.cin-master-group-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: var(--accent);
+
+    font-family: "Rye", Georgia, serif;
+    font-size: 17px;
+
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+
+    text-shadow:
+        1px 1px 0 #000,
+        0 2px 4px rgba(0,0,0,.7);
+}
+
+.cin-master-group-title::before {
+    content: "◆";
+    font-size: 7px;
+}
+
+.cin-master-group-title::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--accent),
+            transparent
+        );
+
+    opacity: .5;
+}
+
+.cin-master-count {
+    color: #817a72;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+}
+
+.cin-master-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 10px !important;
+
+    width: 100%;
+}
+
+.cin-master-card {
+    position: relative;
+
+    min-width: 0;
+    min-height: 100px;
+
+    display: flex !important;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(0,0,0,.42),
+            rgba(0,0,0,.12)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.06);
+
+    border-left:
+        3px solid
+        var(--accent);
+
+    box-shadow:
+        inset 0 0 14px rgba(0,0,0,.30);
+}
+
+.cin-master-card-image {
+    width: 72px !important;
+    min-width: 72px !important;
+    height: 100px !important;
+
+    overflow: hidden;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.06);
+}
+
+.cin-master-card-image img {
+    width: 72px !important;
+    height: 100px !important;
+
+    max-width: none !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.cin-master-card-info {
+    flex: 1;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding:
+        10px
+        9px
+        8px;
+}
+
+.cin-master-card-name {
+    margin-bottom: 5px;
+
+    color: var(--accent);
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.cin-master-card-name a,
+.cin-master-card-name a.user-tagged {
+    color: var(--accent) !important;
+    text-decoration: none !important;
+    border: 0 !important;
+}
+
+.cin-master-card-meta {
+    color: #aaa39a;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+
+.cin-master-card-role {
+    color: #d2cac0;
+}
+
+.cin-master-card-pb {
+    margin-top: 4px;
+
+    color: #7d766e;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 7px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+
+.cin-master-footer {
+    padding: 14px 20px 18px;
+
+    text-align: center;
+
+    color: #77716a;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 8px;
+
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.cin-master-footer::before,
+.cin-master-footer::after {
+    content: "★";
+
+    color: #8d867e;
+
+    margin: 0 12px;
+
+    font-size: 6px;
+}
+
+@media (max-width:700px) {
+
+    .cin-master-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .cin-master-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+}
