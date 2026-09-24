@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rye&family=Sancreek&display=swap');
 
 .cin-plotter {
-    --accent: var(--acc, #777);
+    --accent: #777;
 
-    width: 620px;
+    width: 700px;
     max-width: 94%;
     margin: 30px auto;
     position: relative;
@@ -11,10 +11,13 @@
     box-sizing: border-box;
 
     background:
-        linear-gradient(rgba(7,7,7,.46), rgba(7,7,7,.54)),
+        linear-gradient(
+            rgba(7,7,7,.42),
+            rgba(7,7,7,.50)
+        ),
         url("https://i.imgur.com/YdjlC3W.png");
 
-    background-repeat: repeat;
+    background-repeat: repeat, repeat;
     background-size: auto, 350px auto;
     background-position: center, center top;
 
@@ -23,58 +26,58 @@
     box-shadow:
         0 18px 45px rgba(0,0,0,.65),
         inset 0 0 0 5px #070707,
-        inset 0 0 0 6px rgba(255,255,255,.05),
-        inset 0 0 40px rgba(0,0,0,.7);
+        inset 0 0 0 6px rgba(255,255,255,.045),
+        inset 0 0 40px rgba(0,0,0,.68);
 
     color: #d4cdc4;
     font-family: Arial, sans-serif;
 }
 
-.cin-plotter.SAMWASH   { --accent: var(--acc, #1F75FE); }
-.cin-plotter.Washjr    { --accent: var(--acc, #4F7899); }
-.cin-plotter.Ladies    { --accent: var(--acc, #9A3E68); }
-.cin-plotter.Family    { --accent: var(--acc, #306177); }
-.cin-plotter.Law       { --accent: var(--acc, #708090); }
-.cin-plotter.Mayans    { --accent: var(--acc, #009900); }
-.cin-plotter.Grove     { --accent: var(--acc, #336633); }
-.cin-plotter.GroveJr   { --accent: var(--acc, #336666); }
-.cin-plotter.Prospect  { --accent: var(--acc, #FF7F50); }
-.cin-plotter.JR        { --accent: var(--acc, #FFAD8A); }
-.cin-plotter.SAMCRO    { --accent: var(--acc, #592667); }
-.cin-plotter.SAMCROJr  { --accent: var(--acc, #43417B); }
-.cin-plotter.Cara      { --accent: var(--acc, #FF0080); }
-.cin-plotter.Sweetbutt { --accent: var(--acc, #A94FB3); }
-.cin-plotter.SAMRENO   { --accent: var(--acc, #5C8C7E); }
-.cin-plotter.SAMRENJr  { --accent: var(--acc, #008080); }
-.cin-plotter.SAMTONG   { --accent: var(--acc, #343EBC); }
-.cin-plotter.SAMTONGJr { --accent: var(--acc, #0033FF); }
-.cin-plotter.SAMBRO    { --accent: var(--acc, #704241); }
-.cin-plotter.SAMBROJr  { --accent: var(--acc, #996633); }
-.cin-plotter.SAMLA     { --accent: var(--acc, #D04000); }
-.cin-plotter.SAMLAJR   { --accent: var(--acc, #E67E22); }
-.cin-plotter.SAMBIG    { --accent: var(--acc, #DC143C); }
-.cin-plotter.SAMBIGJR  { --accent: var(--acc, #8B0000); }
-.cin-plotter.SAMBRON   { --accent: var(--acc, #FFFACD); }
-.cin-plotter.SAMBRONJR { --accent: var(--acc, #FFF000); }
-.cin-plotter.Apex      { --accent: var(--acc, #343A40); }
-.cin-plotter.SAMOAHU   { --accent: var(--acc, #D9D2C3); }
-.cin-plotter.Lucifers  { --accent: var(--acc, #FF3131); }
-.cin-plotter.SAMDEN    { --accent: var(--acc, #67A9CF); }
-.cin-plotter.SAMKAN    { --accent: var(--acc, #CFC000); }
-.cin-plotter.SAMKANJR  { --accent: var(--acc, #E0CF4F); }
-.cin-plotter.SAMTAZ    { --accent: var(--acc, #BE5550); }
-.cin-plotter.SAMROCK   { --accent: var(--acc, #7F3036); }
-.cin-plotter.SAMROCKJR { --accent: var(--acc, #A8646B); }
-.cin-plotter.SAMSTO    { --accent: var(--acc, #7F7D22); }
+.cin-plotter.SAMWASH   { --accent: #1F75FE; }
+.cin-plotter.Washjr    { --accent: #4F7899; }
+.cin-plotter.Ladies    { --accent: #9A3E68; }
+.cin-plotter.Family    { --accent: #306177; }
+.cin-plotter.Law       { --accent: #708090; }
+.cin-plotter.Mayans    { --accent: #009900; }
+.cin-plotter.Grove     { --accent: #336633; }
+.cin-plotter.GroveJr   { --accent: #336666; }
+.cin-plotter.Prospect  { --accent: #FF7F50; }
+.cin-plotter.JR        { --accent: #FFAD8A; }
+.cin-plotter.SAMCRO    { --accent: #592667; }
+.cin-plotter.SAMCROJr  { --accent: #43417B; }
+.cin-plotter.Cara      { --accent: #FF0080; }
+.cin-plotter.Sweetbutt { --accent: #A94FB3; }
+.cin-plotter.SAMRENO   { --accent: #5C8C7E; }
+.cin-plotter.SAMRENJr  { --accent: #008080; }
+.cin-plotter.SAMTONG   { --accent: #343EBC; }
+.cin-plotter.SAMTONGJr { --accent: #0033FF; }
+.cin-plotter.SAMBRO    { --accent: #704241; }
+.cin-plotter.SAMBROJr  { --accent: #996633; }
+.cin-plotter.SAMLA     { --accent: #D04000; }
+.cin-plotter.SAMLAJR   { --accent: #E67E22; }
+.cin-plotter.SAMBIG    { --accent: #DC143C; }
+.cin-plotter.SAMBIGJR  { --accent: #8B0000; }
+.cin-plotter.SAMBRON   { --accent: #FFFACD; }
+.cin-plotter.SAMBRONJR { --accent: #FFF000; }
+.cin-plotter.Apex      { --accent: #343A40; }
+.cin-plotter.SAMOAHU   { --accent: #D9D2C3; }
+.cin-plotter.Lucifers  { --accent: #FF3131; }
+.cin-plotter.SAMDEN    { --accent: #67A9CF; }
+.cin-plotter.SAMKAN    { --accent: #CFC000; }
+.cin-plotter.SAMKANJR  { --accent: #E0CF4F; }
+.cin-plotter.SAMTAZ    { --accent: #BE5550; }
+.cin-plotter.SAMROCK   { --accent: #7F3036; }
+.cin-plotter.SAMROCKJR { --accent: #A8646B; }
+.cin-plotter.SAMSTO    { --accent: #7F7D22; }
 
 .cin-plotter::before {
     content: "";
     position: absolute;
     inset: 9px;
-    pointer-events: none;
     z-index: 50;
+    pointer-events: none;
 
-    border: 1px dashed rgba(190,180,165,.14);
+    border: 1px dashed rgba(200,190,175,.12);
 
     box-shadow:
         inset 0 0 0 1px rgba(0,0,0,.7);
@@ -84,8 +87,8 @@
     content: "";
     position: absolute;
     inset: 4px;
-    pointer-events: none;
     z-index: 51;
+    pointer-events: none;
 
     background:
         radial-gradient(circle at 6px 6px,
@@ -112,15 +115,15 @@
 
 .cin-plotter-header {
     display: flex;
-    min-height: 285px;
+    min-height: 325px;
     position: relative;
 
     background:
         linear-gradient(
             110deg,
-            rgba(0,0,0,.05),
-            rgba(0,0,0,.16) 38%,
-            rgba(0,0,0,.48)
+            rgba(0,0,0,.03),
+            rgba(0,0,0,.12) 38%,
+            rgba(0,0,0,.35)
         );
 
     border-bottom: 3px double var(--accent);
@@ -130,8 +133,8 @@
 }
 
 .cin-plotter-portrait {
-    width: 180px;
-    min-width: 180px;
+    width: 190px;
+    min-width: 190px;
     position: relative;
     overflow: hidden;
 
@@ -139,6 +142,8 @@
 
     box-shadow:
         6px 0 20px rgba(0,0,0,.5);
+
+    z-index: 3;
 }
 
 .cin-plotter-portrait::after {
@@ -149,164 +154,281 @@
     background:
         linear-gradient(
             90deg,
-            transparent 58%,
-            rgba(0,0,0,.45)
+            transparent 60%,
+            rgba(0,0,0,.38)
         );
 
     box-shadow:
         inset 0 0 25px rgba(0,0,0,.55);
+
+    pointer-events: none;
 }
 
 .cin-plotter-portrait img {
     width: 100%;
     height: 100%;
-    min-height: 285px;
+    min-height: 325px;
+
     object-fit: cover;
     display: block;
 }
 
 .cin-plotter-intro {
     flex: 1;
-    padding: 28px 28px 24px;
+    position: relative;
+    overflow: hidden;
     box-sizing: border-box;
+
+    padding: 27px 30px 24px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.cin-name-area {
-    position: relative;
-    margin-bottom: 16px;
-}
+.cin-plotter-intro::after {
+    content: "";
 
-.cin-namepatch {
-    width: 360px;
-    max-width: 92%;
-    min-height: 82px;
+    position: absolute;
 
-    box-sizing: border-box;
+    width: 220px;
+    height: 220px;
 
-    padding: 20px 36px 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    right: -5px;
+    top: 38px;
 
     background-image:
-        url("https://i.imgur.com/yuZwrlX.png");
+        url("https://i.imgur.com/NZ51lDa.png");
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: contain;
+
+    opacity: .11;
 
     filter:
-        drop-shadow(0 5px 5px rgba(0,0,0,.55));
+        grayscale(100%)
+        contrast(115%);
 
-    text-align: center;
+    pointer-events: none;
+
+    z-index: 0;
 }
 
-.cin-namepatch,
-.cin-namepatch a,
-.cin-namepatch a.user-tagged {
-    color: #080808 !important;
+.cin-character-name,
+.cin-kutte-patches,
+.cin-character-details,
+.cin-plotter-quote {
+    position: relative;
+    z-index: 2;
+}
+
+.cin-character-name {
+    margin-bottom: 13px;
+
+    color: var(--accent);
 
     font-family: "Rye", Georgia, serif;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: normal;
 
-    line-height: 1.05;
+    line-height: 1.08;
 
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    text-decoration: none !important;
-
     text-shadow:
-        0 1px 0 rgba(255,255,255,.25);
+        1px 1px 0 #000,
+        0 2px 4px rgba(0,0,0,.85);
+}
+
+.cin-character-name a,
+.cin-character-name a.user-tagged {
+    color: var(--accent) !important;
+    text-decoration: none !important;
 }
 
 .cin-kutte-patches {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: nowrap;
 
-    gap: 7px;
+    width: 100%;
+    gap: 8px;
 
-    margin-top: 5px;
+    margin: 8px 0 14px;
 }
 
-.cin-kutte-patches span {
-    display: inline-block;
+.cin-kutte-patches .cin-kutte-patch {
+    width: 140px !important;
+    height: 42px !important;
 
-    padding: 5px 11px 4px;
+    flex: 0 1 140px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #f4f1ea,
-            #cbc6bb
-        );
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-    border: 3px solid #0b0b0b;
+    position: relative !important;
 
-    outline: 1px solid #aaa398;
+    box-sizing: border-box !important;
 
-    color: #0b0b0b;
+    margin: 0 !important;
+    padding: 4px 8px 0 !important;
 
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
+    background-image:
+        url("https://i.imgur.com/yuZwrlX.png") !important;
 
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 100% 150% !important;
 
-    box-shadow:
-        0 3px 6px rgba(0,0,0,.45),
-        inset 0 0 3px rgba(0,0,0,.25);
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+
+    color: #111 !important;
+
+    font-family: "Sancreek", serif !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+
+    line-height: 1 !important;
+
+    text-align: center !important;
+    text-transform: uppercase !important;
+    letter-spacing: .35px !important;
+
+    white-space: nowrap !important;
+
+    text-shadow:
+        0 1px 0 rgba(255,255,255,.14),
+        0 0 1px rgba(0,0,0,.18) !important;
+
+    filter:
+        drop-shadow(0 3px 3px rgba(0,0,0,.45));
+}
+
+.cin-kutte-patches .cin-kutte-patch::before,
+.cin-kutte-patches .cin-kutte-patch::after {
+    display: none !important;
+    content: none !important;
+}
+
+.cin-kutte-patches:has(.cin-kutte-patch:nth-child(4)) {
+    gap: 6px;
+}
+
+.cin-kutte-patches:has(.cin-kutte-patch:nth-child(4)) .cin-kutte-patch {
+    flex: 1 1 0;
+
+    width: auto !important;
+    min-width: 0 !important;
+    height: 42px !important;
+
+    padding: 4px 5px 0 !important;
+
+    font-size: 11px !important;
+    letter-spacing: 0 !important;
 }
 
 .cin-character-details {
-    margin-top: 11px;
+    width: 100%;
+    margin: 2px 0 12px;
+    padding: 8px 0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.055);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.045);
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    text-transform: uppercase;
+}
+
+.cin-detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    margin-bottom: 5px;
 
     color: #aaa39b;
 
-    font-family: "Oswald", Arial, sans-serif;
     font-size: 9px;
     font-weight: 600;
 
-    line-height: 1.8;
+    line-height: 1.4;
 
-    text-transform: uppercase;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.5px;
+}
+
+.cin-detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.cin-detail-row span {
+    position: relative;
+
+    flex: 1;
+
+    padding: 0 9px;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.cin-detail-row span:not(:last-child)::after {
+    content: "◆";
+
+    position: absolute;
+
+    right: -3px;
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color: var(--accent);
+
+    font-size: 5px;
 }
 
 .cin-plotter-quote {
-    position: relative;
-
-    margin-top: 6px;
+    margin-top: 4px;
 
     padding:
-        17px
-        15px
-        15px
-        35px;
+        16px
+        14px
+        14px
+        34px;
 
     background:
         linear-gradient(
             90deg,
-            rgba(0,0,0,.42),
-            rgba(0,0,0,.12)
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.08)
         );
 
     border-left: 3px solid var(--accent);
 
     border-top:
         1px dashed
-        rgba(220,210,195,.12);
+        rgba(220,210,195,.10);
 
     border-bottom:
         1px dashed
-        rgba(220,210,195,.10);
+        rgba(220,210,195,.08);
 
     color: #c8c0b6;
 
@@ -330,13 +452,13 @@
 
     position: absolute;
 
-    left: 10px;
-    top: 8px;
+    left: 9px;
+    top: 7px;
 
     color: var(--accent);
 
     font-family: Georgia, serif;
-    font-size: 36px;
+    font-size: 35px;
     font-weight: bold;
 
     line-height: 1;
@@ -350,26 +472,37 @@
     position: relative;
 
     margin-bottom: 28px;
-    padding: 22px 18px 18px;
+    padding: 20px 18px 18px;
 
     background:
         linear-gradient(
-            135deg,
-            rgba(10,10,10,.62),
-            rgba(20,18,16,.38)
-        );
+            rgba(8,8,8,.45),
+            rgba(8,8,8,.45)
+        ),
+        url("https://i.imgur.com/YdjlC3W.png");
 
-    border: 1px solid rgba(255,255,255,.06);
+    background-repeat: repeat;
+    background-size: auto, 350px auto;
+
+    border:
+        1px solid
+        rgba(255,255,255,.055);
+
+    border-left:
+        2px solid
+        var(--accent);
 
     box-shadow:
-        inset 0 0 20px rgba(0,0,0,.35),
-        0 4px 12px rgba(0,0,0,.18);
+        inset 0 0 18px rgba(0,0,0,.30),
+        0 4px 12px rgba(0,0,0,.14);
 }
 
 .cin-plot-section::before,
 .cin-plot-section::after {
     content: "";
+
     position: absolute;
+    top: 6px;
 
     width: 6px;
     height: 6px;
@@ -383,8 +516,6 @@
             #4b4640 35%,
             #171513 70%
         );
-
-    top: 6px;
 }
 
 .cin-plot-section::before {
@@ -397,62 +528,111 @@
 
 .cin-plot-section:last-child {
     margin-bottom: 0;
+    border-bottom-color: transparent;
+    box-shadow:
+        inset 0 0 18px rgba(0,0,0,.30);
 }
 
 .cin-plot-title {
     display: inline-block;
 
     position: relative;
-    top: -10px;
-    left: -3px;
 
-    margin: 0 0 5px;
-    padding: 7px 15px 7px 18px;
+    margin: 0 0 16px;
 
-    color: #d7cec2;
+    padding:
+        8px
+        22px
+        9px
+        27px;
+
+    color: var(--accent);
 
     background:
         linear-gradient(
-            180deg,
-            color-mix(in srgb, var(--accent) 36%, #171514),
-            #141210
+            90deg,
+            rgba(0,0,0,.62) 0%,
+            rgba(0,0,0,.34) 70%,
+            rgba(0,0,0,.08) 100%
         );
 
-    border: 1px solid var(--accent);
-    border-left: 5px solid var(--accent);
+    border-left:
+        3px solid
+        var(--accent);
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.055);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.06);
 
     box-shadow:
-        inset 0 0 9px rgba(0,0,0,.55),
-        3px 4px 7px rgba(0,0,0,.22);
+        inset 0 0 10px rgba(0,0,0,.35),
+        3px 4px 8px rgba(0,0,0,.18);
 
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
+    font-family:
+        "Rye",
+        Georgia,
+        serif;
+
+    font-size: 17px;
+    font-weight: normal;
+
+    line-height: 1.1;
 
     text-transform: uppercase;
-    letter-spacing: 2.2px;
+    letter-spacing: 1.5px;
 
     text-shadow:
-        1px 1px 1px #000;
+        1px 1px 0 #000,
+        -1px -1px 0 rgba(0,0,0,.28),
+        0 0 7px rgba(0,0,0,.85);
 }
 
 .cin-plot-title::before {
     content: "◆";
-    margin-right: 8px;
+
+    position: absolute;
+
+    left: 10px;
+    top: 50%;
+
+    transform:
+        translateY(-50%);
 
     color: var(--accent);
 
     font-size: 7px;
-    vertical-align: 2px;
+
+    text-shadow:
+        1px 1px 0 #000;
 }
 
 .cin-plot-title::after {
-    display: none;
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -3px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--accent) 0%,
+            rgba(255,255,255,.14) 45%,
+            transparent 100%
+        );
+
+    opacity: .75;
 }
 
 .cin-plot-copy {
-    padding: 4px 4px 2px;
-
     color: #cec7be;
 
     font-size: 12px;
@@ -466,78 +646,44 @@
     font-weight: bold;
 }
 
-.cin-connections {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.cin-connection {
-    position: relative;
-    box-sizing: border-box;
-
-    padding: 13px 15px;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(255,255,255,.025),
-            rgba(0,0,0,.22)
-        );
-
-    border: 1px solid rgba(255,255,255,.07);
-    border-left: 4px solid var(--accent);
-
-    box-shadow:
-        inset 0 0 15px rgba(0,0,0,.35);
-
-    color: #bbb4ab;
-
-    font-size: 11px;
-    line-height: 1.55;
-}
-
-.cin-connection b {
-    display: inline-block;
-
-    margin-bottom: 7px;
-    padding: 3px 9px;
-
-    background: rgba(0,0,0,.38);
-
-    border: 1px solid rgba(255,255,255,.05);
-
-    color: var(--accent);
-
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-
-    text-transform: uppercase;
-    letter-spacing: 1.7px;
-}
-
-.cin-connection::after {
-    content: "◆";
-    position: absolute;
-    top: 8px;
-    right: 10px;
-
-    color: var(--accent);
-
-    font-size: 6px;
-}
-
 .cin-connection-list {
-    max-height: 115px;
+    width: 100%;
+    max-height: 160px;
+
+    box-sizing: border-box;
 
     overflow-y: auto;
     overflow-x: hidden;
 
-    padding-right: 8px;
+    padding:
+        8px
+        14px
+        8px
+        16px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.28),
+            rgba(0,0,0,.10)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.055);
+
+    border-left:
+        3px solid
+        var(--accent);
+
+    box-shadow:
+        inset 0 0 16px rgba(0,0,0,.28);
 
     scrollbar-width: thin;
-    scrollbar-color: var(--accent) rgba(0,0,0,.25);
+
+    scrollbar-color:
+        var(--accent)
+        rgba(0,0,0,.25);
 }
 
 .cin-connection-list::-webkit-scrollbar {
@@ -545,17 +691,26 @@
 }
 
 .cin-connection-list::-webkit-scrollbar-track {
-    background: rgba(0,0,0,.25);
+    background:
+        rgba(0,0,0,.25);
 }
 
 .cin-connection-list::-webkit-scrollbar-thumb {
-    background: var(--accent);
+    background:
+        var(--accent);
 }
 
 .cin-connection-person {
-    padding: 6px 0;
+    padding: 8px 3px;
 
-    border-bottom: 1px dashed rgba(255,255,255,.06);
+    color: #bbb4ab;
+
+    font-size: 11px;
+    line-height: 1.55;
+
+    border-bottom:
+        1px dashed
+        rgba(255,255,255,.065);
 }
 
 .cin-connection-person:last-child {
@@ -565,29 +720,38 @@
 .cin-connection-person strong {
     color: var(--accent);
 
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 10px;
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
 
-    letter-spacing: .6px;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: .5px;
 }
 
 .cin-plotter-footer {
     padding: 15px 20px;
 
-    border-top: 3px double var(--accent);
+    border-top: 0;
 
     background:
         linear-gradient(
             180deg,
-            rgba(255,255,255,.025),
-            rgba(0,0,0,.35)
+            rgba(255,255,255,.012),
+            rgba(0,0,0,.22)
         );
 
     color: #817a72;
 
     text-align: center;
 
-    font-family: "Oswald", Arial, sans-serif;
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
     font-size: 8px;
 
     text-transform: uppercase;
@@ -616,7 +780,10 @@
         height: 240px;
 
         border-right: 0;
-        border-bottom: 3px double var(--accent);
+
+        border-bottom:
+            3px double
+            var(--accent);
     }
 
     .cin-plotter-portrait img {
@@ -624,8 +791,52 @@
         min-height: 0;
     }
 
-    .cin-plotter-name {
+    .cin-character-name {
         font-size: 22px;
     }
 
+    .cin-plotter-intro::after {
+        width: 175px;
+        height: 175px;
+
+        right: 5px;
+        top: 50px;
+    }
+
+    .cin-kutte-patches {
+        gap: 5px;
+    }
+
+    .cin-kutte-patches:has(.cin-kutte-patch:nth-child(4)) .cin-kutte-patch {
+        font-size: 10px !important;
+        padding: 4px 2px 0 !important;
+    }
+
+    .cin-detail-row {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .cin-detail-row span {
+        padding: 0 5px;
+    }
+
+}
+
+.cin-plotter-footer {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+.cin-character-details {
+    border-bottom: none !important;
+}
+
+.cin-plotter .cin-connection-list {
+    height: 210px !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
