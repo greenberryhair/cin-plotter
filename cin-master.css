@@ -13,11 +13,23 @@
             rgba(7,7,7,.42),
             rgba(7,7,7,.50)
         ),
+        url("https://i.imgur.com/NZ51lDa.png"),
         url("https://i.imgur.com/YdjlC3W.png");
 
-    background-repeat: repeat, repeat;
-    background-size: auto, 350px auto;
-    background-position: center, center top;
+    background-repeat:
+        repeat,
+        no-repeat,
+        repeat;
+
+    background-size:
+        auto,
+        340px auto,
+        350px auto;
+
+    background-position:
+        center,
+        right -18px top -12px,
+        center top;
 
     border: 1px solid #5b5650;
 
@@ -104,35 +116,6 @@
     z-index: 3;
 
     pointer-events: none;
-}
-
-.cin-master-header::after {
-    content: "";
-
-    position: absolute;
-
-    width: 315px;
-    height: 315px;
-
-    right: -5px;
-    top: -28px;
-
-    background-image:
-        url("https://i.imgur.com/NZ51lDa.png");
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    opacity: .085;
-
-    filter:
-        grayscale(100%)
-        contrast(115%);
-
-    pointer-events: none;
-
-    z-index: 0;
 }
 
 .cin-master-title {
