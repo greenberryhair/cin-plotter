@@ -840,3 +840,18 @@
     overflow-y: auto !important;
     overflow-x: hidden !important;
 }
+
+.cin-connection-status {
+    margin-left: 5px;
+
+    color: #77716a;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    opacity: .8;
+}
