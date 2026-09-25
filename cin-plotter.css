@@ -718,7 +718,7 @@
 }
 
 .cin-connection-person strong {
-    color: var(--accent);
+    color: #c4bdb4;
 
     font-family:
         "Oswald",
@@ -844,14 +844,18 @@
 .cin-connection-status {
     margin-left: 5px;
 
-    color: #77716a;
+    color: #b54848;
 
-    font-family: "Oswald", Arial, sans-serif;
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
     font-size: 8px;
-    font-weight: 600;
+    font-weight: 700;
 
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    opacity: .8;
+    opacity: .9;
 }
