@@ -859,3 +859,15 @@
 
     opacity: .9;
 }
+
+.cin-character-name.cin-name-long {
+    font-size: 21px;
+    letter-spacing: .5px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.cin-character-name.cin-name-long a,
+.cin-character-name.cin-name-long a.user-tagged {
+    white-space: nowrap !important;
+}
