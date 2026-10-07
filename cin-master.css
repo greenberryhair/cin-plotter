@@ -500,3 +500,57 @@
     }
 
 }
+
+.cin-master-title {
+    font-size: 31px;
+}
+
+.cin-master-subtitle {
+    font-size: 10px;
+}
+
+.cin-master-group-title {
+    font-size: 18px;
+}
+
+.cin-master-group-title::before {
+    font-size: 8px;
+}
+
+.cin-master-count {
+    font-size: 9px;
+}
+
+.cin-master-card-name {
+    font-size: 11px;
+    line-height: 1.15;
+}
+
+.cin-master-card-meta {
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.cin-master-card-pb {
+    font-size: 8px;
+    line-height: 1.35;
+}
+
+.cin-master-plotter-link {
+    font-size: 8px;
+}
+
+.cin-master-footer {
+    font-size: 9px;
+}
+
+.cin-master-footer::before,
+.cin-master-footer::after {
+    font-size: 7px;
+}
+
+@media (max-width:700px) {
+    .cin-master-card-name {
+        font-size: 11px;
+    }
+}
